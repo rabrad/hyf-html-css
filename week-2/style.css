@@ -1,0 +1,194 @@
+/*--------------
+----globale 
+---------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    width:90%;
+    margin:auto;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);
+   }
+
+h1 {
+    font-size: 6em;
+    text-transform: uppercase;
+    color:#fff;
+    margin: 40px 0 10px 0;
+    text-shadow: 4px 3px 0 #7E98DE, 2px 2px 5px #fff;
+    animation: text 5s 1;  /* - animation shorthand property */
+    overflow: hidden;
+}
+
+@keyframes text {
+    0% { width: 0ch; color: #A8BFFF;}
+    50% {width: 5ch; color: #884D80;}
+    100% {width: 5ch; color: #fff;}  
+}
+
+
+h2 {
+    font-size: 3em;
+    font-weight: 100;
+    background: linear-gradient(to right,#cff0ff,#fff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;  
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+section:nth-child(2) > h2 {  /* targeting the second title of 2nd section */
+    margin-top: 70px;
+} 
+
+h3 {
+    font-size: .9em;
+    margin: 10px 0  ;
+    color: #707070;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: .85em;
+    line-height: 1.5;
+}
+
+ul {
+    margin: 0; 
+    Padding:0;
+    list-style: none;
+}
+
+img {
+    width: 80%; 
+}
+[dir="rtl"] {
+    text-align: right;
+}
+
+img:hover {
+    transform: scale(1.1);
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+.grid-item {
+    background-color: #fff;
+    border-radius: 5px;
+    height: 470px;
+    margin: 7px;
+    padding: 20px;
+}
+
+.grid-item:hover {
+    box-shadow: 10px 10px 10px -10px #4c3c4e;
+}
+
+/*-------------------------
+-float & flex / full screen
+-------------------------*/
+
+#grid-floats li { 
+    float: left;
+}
+
+#grid-floats::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#grid-flex  {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+li:nth-child(1) {
+    width: calc(50% - 14px);
+}
+
+li {
+    width: calc(25% - 14px);
+}
+
+li:nth-child(1) > h3 {
+    font-size: 1.2em;
+    color: #7E98DE;
+}
+
+/*---------------------
+- media query / Tablets 
+---------------------*/
+
+@media only screen and (max-width:768px){
+
+    li:nth-child(-n+2) {
+        width: calc(50% - 14px);
+    }
+
+    li:nth-child(-n+2) > h3 {
+        font-size: 1.2em; 
+        color: #7E98DE;
+    }
+
+    li {
+        width: calc(33.3% - 14px);
+    }
+
+    .grid-item:nth-child(-n+2) {
+        height: 380px;
+    }
+
+    .grid-item:nth-child(n+3) {
+        height: 430px;
+    }
+
+    }
+
+/*---------------------
+- media query / Mobiles 
+---------------------*/
+
+@media  screen and (max-width:414px) {
+
+    li:nth-child(-n+2) > h3 { 
+        font-size: .9em; 
+        color: #707070;
+    } /* I used the previous lines to retrieve the original h3 
+      style of the second list-item. I could not come up with 
+      a better solution here.. But it works.*/
+
+    li:nth-child(1) > h3 {
+        font-size: 1.2em; 
+        color: #7E98DE;
+    }
+
+    li:nth-child(1) {
+        width: calc(100% - 14px);
+    }
+
+    .grid-item:nth-child(1) {
+        height: 350px;
+    }
+
+    .grid-item:nth-child(n+2) {
+        height: 480px;
+    }
+
+    li {
+    width: calc(50% - 14px);
+    } 
+
+    p {
+        font-size: .75em;
+    }
+
+    }
