@@ -7,11 +7,12 @@
 html {
     box-sizing: border-box;
   }
+
   *, *:before, *:after {
     box-sizing: inherit;
   }
 
-body{
+body {
     width:90%;
     margin:auto;
     font-family: 'Montserrat', sans-serif;
@@ -29,9 +30,17 @@ h1 {
 }
 
 @keyframes text {
-    0% { width: 0ch; color: #A8BFFF;}
-    50% {width: 5ch; color: #884D80;}
-    100% {width: 5ch; color: #fff;}  
+    0% { 
+        width: 0ch; color: #A8BFFF;
+    }
+
+    50% {
+        width: 5ch; color: #884D80;
+    }
+
+    100% {
+        width: 5ch; color: #fff;
+    }  
 }
 
 
@@ -63,13 +72,14 @@ p {
 
 ul {
     margin: 0; 
-    Padding:0;
+    padding:0;
     list-style: none;
 }
 
 img {
     width: 80%; 
 }
+
 [dir="rtl"] {
     text-align: right;
 }
@@ -100,7 +110,7 @@ img:hover {
     float: left;
 }
 
-#grid-floats::after{
+#grid-floats::after {
     content: "";
     clear: both;
     display: block;
@@ -128,7 +138,7 @@ li:nth-child(1) > h3 {
 - media query / Tablets 
 ---------------------*/
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:768px) {
 
     li:nth-child(-n+2) {
         width: calc(50% - 14px);
