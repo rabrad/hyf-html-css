@@ -6,18 +6,18 @@
 
 html {
     box-sizing: border-box;
-  }
+}
 
-  *, *:before, *:after {
+*, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 
 body {
-    width:90%;
-    margin:auto;
+    width: 90%;
+    margin: auto;
     font-family: 'Montserrat', sans-serif;
     background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);
-   }
+}
 
 h1 {
     font-size: 5.5em;
@@ -112,7 +112,7 @@ img:hover {
     display: block;
 }
 
-#grid-flex  {
+#grid-flex {
     display: flex;
     flex-wrap: wrap;
 } 
