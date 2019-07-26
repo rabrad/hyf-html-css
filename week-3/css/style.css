@@ -19,7 +19,7 @@ main {
     margin-top: 2em;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4 {
     font-size: 1em;
     letter-spacing: -0.025em;
     line-height: 1.375rem;
@@ -160,14 +160,14 @@ ul {
 }
 
 .card:hover { 
-  -webkit-filter: grayscale(0%);
-  transition: all 200ms ease-in;
+    -webkit-filter: grayscale(0%);
+    transition: all 200ms ease-in;
 }
 
 .card:hover ~ .card-info {
-  -webkit-filter: opacity(75%);
-  background-color: white;
-  transition: all 800ms ease-in-out;
+    -webkit-filter: opacity(75%);
+    background-color: white;
+    transition: all 800ms ease-in-out;
 } 
 
 .card-info p {
@@ -186,29 +186,29 @@ ul {
     grid-gap: 3%;
 }
 
-  .grid-1 {
+.grid-1 {
     grid-column: 3/4;
-  }
+}
 
-  .grid-2 {
+.grid-2 {
     grid-column: 3/4;
     grid-row: 2/3;
-  }
+}
 
-  .grid-3 {
+.grid-3 {
     grid-column: 4/5;
     grid-row: 2/3;
-  }
+}
 
-  .grid-4 {
+.grid-4 {
     grid-column: 6/5;
     grid-row: 2/3;
-  }
+}
 
-  .grid-5 {
+.grid-5 {
     grid-column: 6/7;
     grid-row: 2/3;
-  }
+}
 
 .bottom-space-big {
     clear: both;
@@ -247,19 +247,19 @@ h4 {
  Footer 
  ------------------------*/
 
- footer {
-     display: grid;
-     grid-template-columns: repeat(6, minmax(0, 1fr));
-     padding: 0 2%;
+footer {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    padding: 0 2%;
     grid-gap: 3%;
- }
+}
 
- .footer-column-1 {
-     grid-column: 3/4;
- }
+.footer-column-1 {
+    grid-column: 3/4;
+}
 
- .footer-column-title, 
- .footer-column-description {
+.footer-column-title, 
+.footer-column-description {
     text-overflow: ellipsis;
     overflow: hidden;
     font-size: 0.625rem;
@@ -393,7 +393,7 @@ Media quiery - phones
     .footer-column-title {
         padding-bottom: 0;
     }
-    .footer-column-description  {
+    .footer-column-description {
         padding-bottom: 10px;
-}
+    }
 }
