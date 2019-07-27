@@ -285,9 +285,7 @@ Media quiery - phones
     .show-menu, 
     .bachground-columns {
         display: none;
-    }  /* Hidden because i couldn't find out how to combine 
-        Masonry style layout with CSS Grid in this case. 
-        I need to do more research. */
+    }  
 
     .site-header {
         grid-template-columns: 1fr;
@@ -324,7 +322,10 @@ Media quiery - phones
 
     .cards-column-3 {
         display: none;
-    }
+    } /* Hidden because i couldn't find out how to combine 
+    Masonry style layout with CSS Grid in this case. 
+    I need to do more research. */
+    
     .card-info {
         display:none;
     }
@@ -366,7 +367,7 @@ Media quiery - phones
     }
     
     /*----------
-    Media Footer
+    Footer
     ----------- */
     footer {
         grid-template-columns: 1fr;
